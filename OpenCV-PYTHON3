@@ -1,0 +1,12 @@
+配置说明：
+https://www.learnopencv.com/install-opencv3-on-ubuntu/#disqus_thread
+不需要使用虚拟环境
+build.sh
+cmake -D CMAKE_BUILD_TYPE=RELEASE \
+-D CMAKE_INSTALL_PREFIX=/usr/local \
+-D INSTALL_PYTHON_EXAMPLES=ON \
+-D BUILD_opencv_python3=ON \
+-D PYTHON_EXECUTABLE=/usr/bin/python3.5 \
+..
+
+如果使用pip3 install opencv-python,在QT中调用python脚本会出错。
